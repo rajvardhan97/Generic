@@ -16,6 +16,9 @@ namespace Generic
 
             double maxFloat = maximum.MaxFloat(1.5, 2.6, 1.4);
             Console.WriteLine("Maximum Float Value is: " + maxFloat);
+
+            string maxString = maximum.MaxString("Apple","Banana","Watermelon");
+            Console.WriteLine("Maximum String Value is: " + maxString);
         }
     
     }
