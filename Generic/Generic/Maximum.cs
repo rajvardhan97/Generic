@@ -66,4 +66,31 @@ namespace Generic
             return FirstString;
         }
     }
+    public class GenericMax<T> where T : IComparable
+    {
+        public T[] value;
+
+        public GenericMax(T[] value)
+        {
+            this.value = value;
+        }
+
+        public T[] Sort(T[] values)
+        {
+            Array.Sort(values);
+            return values;
+        }
+
+        public T MaxValue(params T[] values)
+        {
+            var sortedValues = Sort(values);
+            return sortedValues[^1];
+        }
+
+        public T maxMethod()
+        {
+            var max = MaxValue(this.value);
+            return max;
+        }
+    }
 }
