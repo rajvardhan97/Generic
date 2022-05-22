@@ -9,6 +9,7 @@ namespace Generic
     internal class Maximum
     {
         public int FirstInt, SecondInt, ThirdInt;
+        public double FirstFloat, SecondFloat, ThirdFloat;
 
         public int MaxInteger(int FirstInt, int SecondInt, int ThirdInt)
         {
@@ -27,6 +28,24 @@ namespace Generic
                 return ThirdInt; 
             }
             return FirstInt;
+        }
+        public double MaxFloat(double FirstFloat, double SecondFloat, double ThirdFloat)
+        {
+            if (FirstFloat.CompareTo(SecondFloat) > 0 && FirstFloat.CompareTo(ThirdFloat) > 0)
+            {
+                return FirstFloat;
+            }
+
+            if (SecondFloat.CompareTo(FirstFloat) > 0 && SecondFloat.CompareTo(ThirdFloat) > 0)
+            {
+                return SecondFloat;
+            }
+
+            if (ThirdFloat.CompareTo(FirstFloat) > 0 && ThirdFloat.CompareTo(SecondFloat) > 0)
+            {
+                return ThirdFloat;
+            }
+            return FirstFloat;
         }
     }
 }
