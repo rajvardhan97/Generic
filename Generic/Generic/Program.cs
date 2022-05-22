@@ -24,7 +24,6 @@ namespace Generic
             GenericMax<int> generic = new GenericMax<int>(arrayList);
             Console.WriteLine("Maximum value is: " + generic.maxMethod());
         }
-
     }
 
 }

@@ -10,7 +10,6 @@ namespace Generic
     {
         public int FirstInt, SecondInt, ThirdInt;
         public double FirstFloat, SecondFloat, ThirdFloat;
-
         public int MaxInteger(int FirstInt, int SecondInt, int ThirdInt)
         {
             if (FirstInt.CompareTo(SecondInt) > 0 && FirstInt.CompareTo(ThirdInt) > 0)
@@ -47,6 +46,7 @@ namespace Generic
             }
             return FirstFloat;
         }
+
         public string MaxString(string FirstString, string SecondString, string ThirdString)
         {
             if (FirstString.CompareTo(SecondString) > 0 && FirstString.CompareTo(ThirdString) > 0)
